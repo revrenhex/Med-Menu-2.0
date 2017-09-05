@@ -3,9 +3,6 @@
 #SingleInstance Force
 SetWorkingDir %A_ScriptDir%
 
-Menu Tray, Icon, shell32.dll, 317
-
-Gui Color, 0x000000
 Gui Add, Button, x8 y8 w80 h28, Decadron
 Gui Add, Button, x88 y8 w80 h28, Decadron Update
 Gui Add, Button, x88 y40 w80 h28, DepoMedrol Update
@@ -62,8 +59,10 @@ Gui Add, Button, x240 y432 w80 h28, Albuterol and Atrovent
 Gui Add, Button, x240 y464 w80 h28, Kenalog Warning
 Gui Add, Button, x8 y504 w80 h28, TDap
 Gui Add, Button, x88 y504 w80 h28, TDap Update
+Gui Add, Button, x8 y536 w80 h28, Varicella
+Gui Add, Button, x88 y536 w80 h28, Varicella Update
 
-Gui Show, x1947 y163 w365 h675, Window (Clone)
+Gui Show, w369 h638, Med Fill
 Return
 
 GuiEscape:
