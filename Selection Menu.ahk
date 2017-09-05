@@ -62,7 +62,7 @@ Gui Add, Button, x88 y504 w80 h28, TDap Update
 Gui Add, Button, x8 y536 w80 h28, Varicella
 Gui Add, Button, x88 y536 w80 h28, Varicella Update
 
-Gui Show, w369 h638, Med Fill
+Gui Show, x2000 y150 w375 h638, Med Fill
 Return
 
 GuiEscape:
@@ -70,7 +70,7 @@ GuiClose:
     ExitApp
 
 ; Do not edit above this line
-
+;Gui Show, x2000 y0 w345 h838, Med Fill
 
 ;=============================================
 ;          Extras
