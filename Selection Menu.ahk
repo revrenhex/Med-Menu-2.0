@@ -544,3 +544,43 @@ ExitApp
 ButtonTwinRixUpdate:
 Run Update TwinRix.ahk
 ExitApp
+
+
+
+;=============================================
+;              Ativan
+;=============================================
+ButtonAtivan:
+IniRead, Ativan_Exp , MedList.ini , Ativan, Exp , 
+IniRead, Ativan_Lot , MedList.ini , Ativan, Lot , 
+IniRead, Ativan_Man , MedList.ini , Ativan, Man , 
+IniRead, Ativan_NDC , MedList.ini , Ativan, NDC , 
+;
+ifWinExist, Injection
+WinActivate, Injection
+Send +{Tab 3}{Esc}%Ativan_Exp%{Tab}%Ativan_Lot%{Tab}%Ativan_Man%{Tab}{Esc}%Ativan_NDC%
+ExitApp
+
+ButtonAtivanUpdate:
+Run Update Ativan.ahk
+ExitApp
+
+
+
+;=============================================
+;              B12
+;=============================================
+ButtonB12:
+IniRead, B12_Exp , MedList.ini , B12, Exp , 
+IniRead, B12_Lot , MedList.ini , B12, Lot , 
+IniRead, B12_Man , MedList.ini , B12, Man , 
+IniRead, B12_NDC , MedList.ini , B12, NDC , 
+;
+ifWinExist, Injection
+WinActivate, Injection
+Send +{Tab 3}{Esc}%B12_Exp%{Tab}%B12_Lot%{Tab}%B12_Man%{Tab}{Esc}%B12_NDC%
+ExitApp
+
+ButtonB12Update:
+Run Update B12.ahk
+ExitApp
