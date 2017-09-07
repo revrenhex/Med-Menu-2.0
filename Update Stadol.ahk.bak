@@ -10,7 +10,7 @@ IniRead, OLDStadol_Man , MedList.ini , Stadol, Man ,
 IniRead, OLDStadol_NDC , MedList.ini , Stadol, NDC , 
 
 Inputbox, Stadol_Lot , Lot, Enter Stadol Lot Number, ,,,,,,9999,%OLDStadol_Lot%
-Inputbox, Stadol_Exp , Exp, Enter Stadol Expiration Date (in format mmddyyyy), ,,,,,,9999,%OLDStadol_Exp%
+Inputbox, Stadol_Exp , Exp, Enter Stadol Expiration Date (in format mm/dd/yyyy), ,,,,,,9999,%OLDStadol_Exp%
 Inputbox, Stadol_Man , Manufacturer, Enter Stadol Manufactuer, ,,,,,,9999,%OLDStadol_Man%
 Inputbox, Stadol_NDC , NDC Number, Enter Stadol NDC Number , ,,,,,,9999,%OLDStadol_NDC%
 IniWrite, %Stadol_Lot% , MedList.ini, Stadol, Lot

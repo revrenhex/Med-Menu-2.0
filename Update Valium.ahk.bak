@@ -10,7 +10,7 @@ IniRead, OLDValium_Man , MedList.ini , Valium, Man ,
 IniRead, OLDValium_NDC , MedList.ini , Valium, NDC , 
 
 Inputbox, Valium_Lot , Lot, Enter Valium Lot Number, ,,,,,,9999,%OLDValium_Lot%
-Inputbox, Valium_Exp , Exp, Enter Valium Expiration Date (in format mmddyyyy), ,,,,,,9999,%OLDValium_Exp%
+Inputbox, Valium_Exp , Exp, Enter Valium Expiration Date (in format mm/dd/yyyy), ,,,,,,9999,%OLDValium_Exp%
 Inputbox, Valium_Man , Manufacturer, Enter Valium Manufactuer, ,,,,,,9999,%OLDValium_Man%
 Inputbox, Valium_NDC , NDC Number, Enter Valium NDC Number , ,,,,,,9999,%OLDValium_NDC%
 IniWrite, %Valium_Lot% , MedList.ini, Valium, Lot

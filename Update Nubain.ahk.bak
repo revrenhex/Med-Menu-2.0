@@ -10,7 +10,7 @@ IniRead, OLDNubain_Man , MedList.ini , Nubain, Man ,
 IniRead, OLDNubain_NDC , MedList.ini , Nubain, NDC , 
 
 Inputbox, Nubain_Lot , Lot, Enter Nubain Lot Number, ,,,,,,9999,%OLDNubain_Lot%
-Inputbox, Nubain_Exp , Exp, Enter Nubain Expiration Date (in format mmddyyyy), ,,,,,,9999,%OLDNubain_Exp%
+Inputbox, Nubain_Exp , Exp, Enter Nubain Expiration Date (in format mm/dd/yyyy), ,,,,,,9999,%OLDNubain_Exp%
 Inputbox, Nubain_Man , Manufacturer, Enter Nubain Manufactuer, ,,,,,,9999,%OLDNubain_Man%
 Inputbox, Nubain_NDC , NDC Number, Enter Nubain NDC Number , ,,,,,,9999,%OLDNubain_NDC%
 IniWrite, %Nubain_Lot% , MedList.ini, Nubain, Lot

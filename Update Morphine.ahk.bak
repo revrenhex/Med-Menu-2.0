@@ -10,7 +10,7 @@ IniRead, OLDMorphine_Man , MedList.ini , Morphine, Man ,
 IniRead, OLDMorphine_NDC , MedList.ini , Morphine, NDC , 
 
 Inputbox, Morphine_Lot , Lot, Enter Morphine Lot Number, ,,,,,,9999,%OLDMorphine_Lot%
-Inputbox, Morphine_Exp , Exp, Enter Morphine Expiration Date (in format mmddyyyy), ,,,,,,9999,%OLDMorphine_Exp%
+Inputbox, Morphine_Exp , Exp, Enter Morphine Expiration Date (in format mm/dd/yyyy), ,,,,,,9999,%OLDMorphine_Exp%
 Inputbox, Morphine_Man , Manufacturer, Enter Morphine Manufactuer, ,,,,,,9999,%OLDMorphine_Man%
 Inputbox, Morphine_NDC , NDC Number, Enter Morphine NDC Number , ,,,,,,9999,%OLDMorphine_NDC%
 IniWrite, %Morphine_Lot% , MedList.ini, Morphine, Lot

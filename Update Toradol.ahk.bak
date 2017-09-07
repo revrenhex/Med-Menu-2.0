@@ -10,7 +10,7 @@ IniRead, OLDToradol_Man , MedList.ini , Toradol, Man ,
 IniRead, OLDToradol_NDC , MedList.ini , Toradol, NDC , 
 
 Inputbox, Toradol_Lot , Lot, Enter Toradol Lot Number, ,,,,,,9999,%OLDToradol_Lot%
-Inputbox, Toradol_Exp , Exp, Enter Toradol Expiration Date (in format mmddyyyy), ,,,,,,9999,%OLDToradol_Exp%
+Inputbox, Toradol_Exp , Exp, Enter Toradol Expiration Date (in format mm/dd/yyyy), ,,,,,,9999,%OLDToradol_Exp%
 Inputbox, Toradol_Man , Manufacturer, Enter Toradol Manufactuer, ,,,,,,9999,%OLDToradol_Man%
 Inputbox, Toradol_NDC , NDC Number, Enter Toradol NDC Number , ,,,,,,9999,%OLDToradol_NDC%
 IniWrite, %Toradol_Lot% , MedList.ini, Toradol, Lot

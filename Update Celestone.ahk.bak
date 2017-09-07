@@ -10,7 +10,7 @@ IniRead, OLDCelestone_Man , MedList.ini , Celestone, Man ,
 IniRead, OLDCelestone_NDC , MedList.ini , Celestone, NDC , 
 
 Inputbox, Celestone_Lot , Lot, Enter Celestone Lot Number, ,,,,,,9999,%OLDCelestone_Lot%
-Inputbox, Celestone_Exp , Exp, Enter Celestone Expiration Date (in format mmddyyyy), ,,,,,,9999,%OLDCelestone_Exp%
+Inputbox, Celestone_Exp , Exp, Enter Celestone Expiration Date (in format mm/dd/yyyy), ,,,,,,9999,%OLDCelestone_Exp%
 Inputbox, Celestone_Man , Manufacturer, Enter Celestone Manufactuer, ,,,,,,9999,%OLDCelestone_Man%
 Inputbox, Celestone_NDC , NDC Number, Enter Celestone NDC Number , ,,,,,,9999,%OLDCelestone_NDC%
 IniWrite, %Celestone_Lot% , MedList.ini, Celestone, Lot

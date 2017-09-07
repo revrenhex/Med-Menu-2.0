@@ -10,7 +10,7 @@ IniRead, OLDNorflex_Man , MedList.ini , Norflex, Man ,
 IniRead, OLDNorflex_NDC , MedList.ini , Norflex, NDC , 
 
 Inputbox, Norflex_Lot , Lot, Enter Norflex Lot Number, ,,,,,,9999,%OLDNorflex_Lot%
-Inputbox, Norflex_Exp , Exp, Enter Norflex Expiration Date (in format mmddyyyy), ,,,,,,9999,%OLDNorflex_Exp%
+Inputbox, Norflex_Exp , Exp, Enter Norflex Expiration Date (in format mm/dd/yyyy), ,,,,,,9999,%OLDNorflex_Exp%
 Inputbox, Norflex_Man , Manufacturer, Enter Norflex Manufactuer, ,,,,,,9999,%OLDNorflex_Man%
 Inputbox, Norflex_NDC , NDC Number, Enter Norflex NDC Number , ,,,,,,9999,%OLDNorflex_NDC%
 IniWrite, %Norflex_Lot% , MedList.ini, Norflex, Lot

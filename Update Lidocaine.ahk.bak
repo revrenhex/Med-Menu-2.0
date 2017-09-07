@@ -10,7 +10,7 @@ IniRead, OLDLidocaine_Man , MedList.ini , Lidocaine, Man ,
 IniRead, OLDLidocaine_NDC , MedList.ini , Lidocaine, NDC , 
 
 Inputbox, Lidocaine_Lot , Lot, Enter Lidocaine Lot Number, ,,,,,,9999,%OLDLidocaine_Lot%
-Inputbox, Lidocaine_Exp , Exp, Enter Lidocaine Expiration Date (in format mmddyyyy), ,,,,,,9999,%OLDLidocaine_Exp%
+Inputbox, Lidocaine_Exp , Exp, Enter Lidocaine Expiration Date (in format mm/dd/yyyy), ,,,,,,9999,%OLDLidocaine_Exp%
 Inputbox, Lidocaine_Man , Manufacturer, Enter Lidocaine Manufactuer, ,,,,,,9999,%OLDLidocaine_Man%
 Inputbox, Lidocaine_NDC , NDC Number, Enter Lidocaine NDC Number , ,,,,,,9999,%OLDLidocaine_NDC%
 IniWrite, %Lidocaine_Lot% , MedList.ini, Lidocaine, Lot

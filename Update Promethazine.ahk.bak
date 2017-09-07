@@ -10,7 +10,7 @@ IniRead, OLDPromethazine_Man , MedList.ini , Promethazine, Man ,
 IniRead, OLDPromethazine_NDC , MedList.ini , Promethazine, NDC , 
 
 Inputbox, Promethazine_Lot , Lot, Enter Promethazine Lot Number, ,,,,,,9999,%OLDPromethazine_Lot%
-Inputbox, Promethazine_Exp , Exp, Enter Promethazine Expiration Date (in format mmddyyyy), ,,,,,,9999,%OLDPromethazine_Exp%
+Inputbox, Promethazine_Exp , Exp, Enter Promethazine Expiration Date (in format mm/dd/yyyy), ,,,,,,9999,%OLDPromethazine_Exp%
 Inputbox, Promethazine_Man , Manufacturer, Enter Promethazine Manufactuer, ,,,,,,9999,%OLDPromethazine_Man%
 Inputbox, Promethazine_NDC , NDC Number, Enter Promethazine NDC Number , ,,,,,,9999,%OLDPromethazine_NDC%
 IniWrite, %Promethazine_Lot% , MedList.ini, Promethazine, Lot

@@ -61,19 +61,14 @@ Gui Add, Button, x8 y504 w80 h28, Flu
 Gui Add, Button, x88 y504 w80 h28, Flu Update
 Gui Add, Button, x8 y536 w80 h28, Varicella
 Gui Add, Button, x88 y536 w80 h28, Varicella Update
-Gui Add, Button, x200 y152 w80 h28, Ativan
-Gui Add, Button, x8 y568 w80 h28, TDap
-Gui Add, Button, x88 y568 w80 h28, TDap Update
-Gui Add, Button, x8 y600 w80 h28, TwinRix
-Gui Add, Button, x88 y600 w80 h28, TwinRix Update
 
 Gui, Color, 6d6e7c
-Gui Show, x2000 y150 w370 h638, Med Fill 2.0.2
+Gui Show, x2000 y150 w370 h638, Med Fill 2.0.1
 Return
 
 GuiEscape:
 GuiClose:
-ExitApp
+    ExitApp
 
 ; Do not edit above this line
 ;Gui Show, x2000 y150 w370 h638, Med Fill
@@ -83,14 +78,14 @@ ExitApp
 ;=============================================
 ButtonKenalogWARNING:
 ifWinExist, Injection
-WinActivate, 
-Send Patient was advised of the potential side effects of Intramuscular Kenalog injection, including lipodystrophy and muscle atrophy.  Despite the availability of alternatives, patient wished to proceed, verbalizing their understanding of the risks.
+	WinActivate, 
+		Send Patient was advised of the potential side effects of Intramuscular Kenalog injection, including lipodystrophy and muscle atrophy.  Despite the availability of alternatives, patient wished to proceed, verbalizing their understanding of the risks.
 ExitApp
 
 ButtonAlbuterolandAtrovent:
 ifWinExist, Administer
-WinActivate, Administer
-Send 2.5mg Albuterol / 0.5mg Atrovent
+	WinActivate, Administer
+		Send 2.5mg Albuterol / 0.5mg Atrovent
 ExitApp
 
 
@@ -104,8 +99,8 @@ IniRead, Decadron_Man , MedList.ini , Decadron, Man ,
 IniRead, Decadron_NDC , MedList.ini , Decadron, NDC , 
 ;
 ifWinExist, Injection
-WinActivate, Injection
-Send +{Tab 3}{Esc}%Decadron_Exp%{Tab}%Decadron_Lot%{Tab}%Decadron_Man%{Tab}{Esc}%Decadron_NDC%
+	WinActivate, Injection
+		Send +{Tab 3}{Esc}%Decadron_Exp%{Tab}%Decadron_Lot%{Tab}%Decadron_Man%{Tab}{Esc}%Decadron_NDC%
 ExitApp
 
 ButtonDecadronUpdate:
@@ -123,8 +118,8 @@ IniRead, DepoMedrol_Man , MedList.ini , DepoMedrol, Man ,
 IniRead, DepoMedrol_NDC , MedList.ini , DepoMedrol, NDC , 
 ;
 ifWinExist, Injection
-WinActivate, Injection
-Send +{Tab 3}{Esc}%DepoMedrol_Exp%{Tab}%DepoMedrol_Lot%{Tab}%DepoMedrol_Man%{Tab}{Esc}%DepoMedrol_NDC%
+	WinActivate, Injection
+		Send +{Tab 3}{Esc}%DepoMedrol_Exp%{Tab}%DepoMedrol_Lot%{Tab}%DepoMedrol_Man%{Tab}{Esc}%DepoMedrol_NDC%
 ExitApp
 
 ButtonDepoMedrolUpdate:
@@ -142,8 +137,8 @@ IniRead, SoluMedrol_Man , MedList.ini , SoluMedrol, Man ,
 IniRead, SoluMedrol_NDC , MedList.ini , SoluMedrol, NDC , 
 ;
 ifWinExist, Injection
-WinActivate, Injection
-Send +{Tab 3}{Esc}%SoluMedrol_Exp%{Tab}%SoluMedrol_Lot%{Tab}%SoluMedrol_Man%{Tab}{Esc}%SoluMedrol_NDC%
+	WinActivate, Injection
+		Send +{Tab 3}{Esc}%SoluMedrol_Exp%{Tab}%SoluMedrol_Lot%{Tab}%SoluMedrol_Man%{Tab}{Esc}%SoluMedrol_NDC%
 ExitApp
 
 ButtonSoluMedrolUpdate:
@@ -161,8 +156,8 @@ IniRead, Kenalog_Man , MedList.ini , Kenalog, Man ,
 IniRead, Kenalog_NDC , MedList.ini , Kenalog, NDC , 
 ;
 ifWinExist, Injection
-WinActivate, Injection
-Send +{Tab 3}{Esc}%Kenalog_Exp%{Tab}%Kenalog_Lot%{Tab}%Kenalog_Man%{Tab}{Esc}%Kenalog_NDC%
+	WinActivate, Injection
+		Send +{Tab 3}{Esc}%Kenalog_Exp%{Tab}%Kenalog_Lot%{Tab}%Kenalog_Man%{Tab}{Esc}%Kenalog_NDC%
 ExitApp
 
 ButtonKenalogUpdate:
@@ -180,8 +175,8 @@ IniRead, Celestone_Man , MedList.ini , Celestone, Man ,
 IniRead, Celestone_NDC , MedList.ini , Celestone, NDC , 
 ;
 ifWinExist, Injection
-WinActivate, Injection
-Send +{Tab 3}{Esc}%Celestone_Exp%{Tab}%Celestone_Lot%{Tab}%Celestone_Man%{Tab}{Esc}%Celestone_NDC%
+	WinActivate, Injection
+		Send +{Tab 3}{Esc}%Celestone_Exp%{Tab}%Celestone_Lot%{Tab}%Celestone_Man%{Tab}{Esc}%Celestone_NDC%
 ExitApp
 
 ButtonCelestoneUpdate:
@@ -199,8 +194,8 @@ IniRead, Rocephin_Man , MedList.ini , Rocephin, Man ,
 IniRead, Rocephin_NDC , MedList.ini , Rocephin, NDC , 
 ;
 ifWinExist, Injection
-WinActivate, Injection
-Send +{Tab 3}{Esc}%Rocephin_Exp%{Tab}%Rocephin_Lot%{Tab}%Rocephin_Man%{Tab}{Esc}%Rocephin_NDC%
+	WinActivate, Injection
+		Send +{Tab 3}{Esc}%Rocephin_Exp%{Tab}%Rocephin_Lot%{Tab}%Rocephin_Man%{Tab}{Esc}%Rocephin_NDC%
 ExitApp
 
 ButtonRocephinUpdate:
@@ -218,8 +213,8 @@ IniRead, Clindamycin_Man , MedList.ini , Clindamycin, Man ,
 IniRead, Clindamycin_NDC , MedList.ini , Clindamycin, NDC , 
 ;
 ifWinExist, Injection
-WinActivate, Injection
-Send +{Tab 3}{Esc}%Clindamycin_Exp%{Tab}%Clindamycin_Lot%{Tab}%Clindamycin_Man%{Tab}{Esc}%Clindamycin_NDC%
+	WinActivate, Injection
+		Send +{Tab 3}{Esc}%Clindamycin_Exp%{Tab}%Clindamycin_Lot%{Tab}%Clindamycin_Man%{Tab}{Esc}%Clindamycin_NDC%
 ExitApp
 
 ButtonClindamycinUpdate:
@@ -237,8 +232,8 @@ IniRead, Toradol_Man , MedList.ini , Toradol, Man ,
 IniRead, Toradol_NDC , MedList.ini , Toradol, NDC , 
 ;
 ifWinExist, Injection
-WinActivate, Injection
-Send +{Tab 3}{Esc}%Toradol_Exp%{Tab}%Toradol_Lot%{Tab}%Toradol_Man%{Tab}{Esc}%Toradol_NDC%
+	WinActivate, Injection
+		Send +{Tab 3}{Esc}%Toradol_Exp%{Tab}%Toradol_Lot%{Tab}%Toradol_Man%{Tab}{Esc}%Toradol_NDC%
 ExitApp
 
 ButtonToradolUpdate:
@@ -257,8 +252,8 @@ IniRead, Promethazine_Man , MedList.ini , Promethazine, Man ,
 IniRead, Promethazine_NDC , MedList.ini , Promethazine, NDC , 
 ;
 ifWinExist, Injection
-WinActivate, Injection
-Send +{Tab 3}{Esc}%Promethazine_Exp%{Tab}%Promethazine_Lot%{Tab}%Promethazine_Man%{Tab}{Esc}%Promethazine_NDC%
+	WinActivate, Injection
+		Send +{Tab 3}{Esc}%Promethazine_Exp%{Tab}%Promethazine_Lot%{Tab}%Promethazine_Man%{Tab}{Esc}%Promethazine_NDC%
 ExitApp
 
 ButtonPromethazineUpdate:
@@ -277,8 +272,8 @@ IniRead, Norflex_Man , MedList.ini , Norflex, Man ,
 IniRead, Norflex_NDC , MedList.ini , Norflex, NDC , 
 ;
 ifWinExist, Injection
-WinActivate, Injection
-Send +{Tab 3}{Esc}%Norflex_Exp%{Tab}%Norflex_Lot%{Tab}%Norflex_Man%{Tab}{Esc}%Norflex_NDC%
+	WinActivate, Injection
+		Send +{Tab 3}{Esc}%Norflex_Exp%{Tab}%Norflex_Lot%{Tab}%Norflex_Man%{Tab}{Esc}%Norflex_NDC%
 ExitApp
 
 ButtonNorflexUpdate:
@@ -297,8 +292,8 @@ IniRead, Demerol_Man , MedList.ini , Demerol, Man ,
 IniRead, Demerol_NDC , MedList.ini , Demerol, NDC , 
 ;
 ifWinExist, Injection
-WinActivate, Injection
-Send +{Tab 3}{Esc}%Demerol_Exp%{Tab}%Demerol_Lot%{Tab}%Demerol_Man%{Tab}{Esc}%Demerol_NDC%
+	WinActivate, Injection
+		Send +{Tab 3}{Esc}%Demerol_Exp%{Tab}%Demerol_Lot%{Tab}%Demerol_Man%{Tab}{Esc}%Demerol_NDC%
 ExitApp
 
 ButtonDemerolUpdate:
@@ -317,8 +312,8 @@ IniRead, Vancomycin_Man , MedList.ini , Vancomycin, Man ,
 IniRead, Vancomycin_NDC , MedList.ini , Vancomycin, NDC , 
 ;
 ifWinExist, Injection
-WinActivate, Injection
-Send +{Tab 3}{Esc}%Vancomycin_Exp%{Tab}%Vancomycin_Lot%{Tab}%Vancomycin_Man%{Tab}{Esc}%Vancomycin_NDC%
+	WinActivate, Injection
+		Send +{Tab 3}{Esc}%Vancomycin_Exp%{Tab}%Vancomycin_Lot%{Tab}%Vancomycin_Man%{Tab}{Esc}%Vancomycin_NDC%
 ExitApp
 
 ButtonVancomycinUpdate:
@@ -337,8 +332,8 @@ IniRead, Nubain_Man , MedList.ini , Nubain, Man ,
 IniRead, Nubain_NDC , MedList.ini , Nubain, NDC , 
 ;
 ifWinExist, Injection
-WinActivate, Injection
-Send +{Tab 3}{Esc}%Nubain_Exp%{Tab}%Nubain_Lot%{Tab}%Nubain_Man%{Tab}{Esc}%Nubain_NDC%
+	WinActivate, Injection
+		Send +{Tab 3}{Esc}%Nubain_Exp%{Tab}%Nubain_Lot%{Tab}%Nubain_Man%{Tab}{Esc}%Nubain_NDC%
 ExitApp
 
 ButtonNubainUpdate:
@@ -357,8 +352,8 @@ IniRead, Stadol_Man , MedList.ini , Stadol, Man ,
 IniRead, Stadol_NDC , MedList.ini , Stadol, NDC , 
 ;
 ifWinExist, Injection
-WinActivate, Injection
-Send +{Tab 3}{Esc}%Stadol_Exp%{Tab}%Stadol_Lot%{Tab}%Stadol_Man%{Tab}{Esc}%Stadol_NDC%
+	WinActivate, Injection
+		Send +{Tab 3}{Esc}%Stadol_Exp%{Tab}%Stadol_Lot%{Tab}%Stadol_Man%{Tab}{Esc}%Stadol_NDC%
 ExitApp
 
 ButtonStadolUpdate:
@@ -377,8 +372,8 @@ IniRead, Morphine_Man , MedList.ini , Morphine, Man ,
 IniRead, Morphine_NDC , MedList.ini , Morphine, NDC , 
 ;
 ifWinExist, Injection
-WinActivate, Injection
-Send +{Tab 3}{Esc}%Morphine_Exp%{Tab}%Morphine_Lot%{Tab}%Morphine_Man%{Tab}{Esc}%Morphine_NDC%
+	WinActivate, Injection
+		Send +{Tab 3}{Esc}%Morphine_Exp%{Tab}%Morphine_Lot%{Tab}%Morphine_Man%{Tab}{Esc}%Morphine_NDC%
 ExitApp
 
 ButtonMorphineUpdate:
@@ -397,8 +392,8 @@ IniRead, ZofranInj_Man , MedList.ini , ZofranInj, Man ,
 IniRead, ZofranInj_NDC , MedList.ini , ZofranInj, NDC , 
 ;
 ifWinExist, Injection
-WinActivate, Injection
-Send +{Tab 3}{Esc}%ZofranInj_Exp%{Tab}%ZofranInj_Lot%{Tab}%ZofranInj_Man%{Tab}{Esc}%ZofranInj_NDC%
+	WinActivate, Injection
+		Send +{Tab 3}{Esc}%ZofranInj_Exp%{Tab}%ZofranInj_Lot%{Tab}%ZofranInj_Man%{Tab}{Esc}%ZofranInj_NDC%
 ExitApp
 
 ButtonZofranInjUpdate:
@@ -417,8 +412,8 @@ IniRead, TB_Man , MedList.ini , TB, Man ,
 IniRead, TB_NDC , MedList.ini , TB, NDC , 
 ;
 ifWinExist, Tuberculosis
-WinActivate, Tuberculosis
-Send 5{Tab}Left Forearm{Tab}%TB_Lot%{Tab}{Esc}%TB_Exp%{Tab}{Esc}{Tab 4}Manufactuer: %TB_Man%{Enter}NDC: %TB_NDC%
+	WinActivate, Tuberculosis
+		Send 5{Tab}Left Forearm{Tab}%TB_Lot%{Tab}{Esc}%TB_Exp%{Tab}{Esc}{Tab 4}Manufactuer: %TB_Man%{Enter}NDC: %TB_NDC%
 ExitApp
 
 ButtonTBUpdate:
@@ -437,8 +432,8 @@ IniRead, Lidocaine_Man , MedList.ini , Lidocaine, Man ,
 IniRead, Lidocaine_NDC , MedList.ini , Lidocaine, NDC , 
 ;
 ifWinExist, Injection
-WinActivate, Injection
-Send 2.8ml{Tab}{Esc}%Lidocaine_Exp%{Tab}%Lidocaine_Lot%{Tab}%Lidocaine_Man%{Tab}{Esc%Lidocaine_NDC%
+	WinActivate, Injection
+		Send 2.8ml{Tab}{Esc}%Lidocaine_Exp%{Tab}%Lidocaine_Lot%{Tab}%Lidocaine_Man%{Tab}{Esc%Lidocaine_NDC%
 ExitApp
 
 ButtonLidocaineUpdate:
@@ -457,8 +452,8 @@ IniRead, Valium_Man , MedList.ini , Valium, Man ,
 IniRead, Valium_NDC , MedList.ini , Valium, NDC , 
 ;
 ifWinExist, Injection
-WinActivate, Injection
-Send +{Tab 3}{Esc}%Valium_Exp%{Tab}%Valium_Lot%{Tab}%Valium_Man%{Tab}{Esc}%Valium_NDC%
+	WinActivate, Injection
+		Send +{Tab 3}{Esc}%Valium_Exp%{Tab}%Valium_Lot%{Tab}%Valium_Man%{Tab}{Esc}%Valium_NDC%
 ExitApp
 
 ButtonValiumUpdate:
@@ -477,8 +472,8 @@ IniRead, Flu_Man , MedList.ini , Flu, Man ,
 IniRead, Flu_NDC , MedList.ini , Flu, NDC , 
 ;
 ifWinExist, Vaccine
-WinActivate, Vaccine
-Send %Flu_NDC%{Tab}%Flu_lot%{Tab}%Flu_Exp%{Tab}{Down 2}{Tab 4}{Space}{Tab 2}Cliff Harris RN{Tab 2}{Del}0.5}{Tab}{Down}
+	WinActivate, Vaccine
+		Send %Flu_NDC%{Tab}%Flu_lot%{Tab}%Flu_Exp%{Tab}{Down 2}{Tab 4}{Space}{Tab 2}Cliff Harris RN{Tab 2}{Del}0.5}{Tab}{Down}
 ExitApp
 
 ButtonFluUpdate:
@@ -497,50 +492,10 @@ IniRead, Varicella_Man , MedList.ini , Varicella, Man ,
 IniRead, Varicella_NDC , MedList.ini , Varicella, NDC , 
 ;
 ifWinExist, Vaccine
-WinActivate, Vaccine
-Send %Varicella_NDC%{Tab}%Varicella_lot%{Tab}%Varicella_Exp%{Tab}{Down 4}{Tab 4}{Space}{Tab 2}Cliff Harris RN{Tab 2}{Del}0.5}{Tab}{Down}
+	WinActivate, Vaccine
+		Send %Varicella_NDC%{Tab}%Varicella_lot%{Tab}%Varicella_Exp%{Tab}{Down 4}{Tab 4}{Space}{Tab 2}Cliff Harris RN{Tab 2}{Del}0.5}{Tab}{Down}
 ExitApp
 
 ButtonVaricellaUpdate:
 Run Update Varicella.ahk
-ExitApp
-
-
-
-;=============================================
-;              TDap
-;=============================================
-ButtonTDap:
-IniRead, TDap_Exp , MedList.ini , TDap, Exp , 
-IniRead, TDap_Lot , MedList.ini , TDap, Lot , 
-IniRead, TDap_Man , MedList.ini , TDap, Man , 
-IniRead, TDap_NDC , MedList.ini , TDap, NDC , 
-;
-ifWinExist, Vaccine
-WinActivate, Vaccine
-Send %TDap_NDC%{Tab}%TDap_lot%{Tab}%TDap_Exp%{Tab}{Down 2}{Tab 4}{Space}{Tab 2}Cliff Harris RN{Tab 2}{Del}0.5}{Tab}{Down}
-ExitApp
-
-ButtonTDapUpdate:
-Run Update TDap.ahk
-ExitApp
-
-
-
-;=============================================
-;              TwinRix
-;=============================================
-ButtonTwinRix:
-IniRead, TwinRix_Exp , MedList.ini , TwinRix, Exp , 
-IniRead, TwinRix_Lot , MedList.ini , TwinRix, Lot , 
-IniRead, TwinRix_Man , MedList.ini , TwinRix, Man , 
-IniRead, TwinRix_NDC , MedList.ini , TwinRix, NDC , 
-;
-ifWinExist, Vaccine
-WinActivate, Vaccine
-Send %TwinRix_NDC%{Tab}%TwinRix_lot%{Tab}%TwinRix_Exp%{Tab}{Down 2}{Tab 4}{Space}{Tab 2}Cliff Harris RN{Tab 2}{Del}0.5}{Tab}{Down}
-ExitApp
-
-ButtonTwinRixUpdate:
-Run Update TwinRix.ahk
 ExitApp

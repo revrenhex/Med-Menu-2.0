@@ -10,7 +10,7 @@ IniRead, OLDDepoMedrol_NDC , MedList.ini , DepoMedrol, NDC ,
 
 Inputbox, DepoMedrol_Lot , Lot, Enter DepoMedrol Lot Number, ,,,,,,9999, %OLDDepoMedrol_Lot%
 	IniWrite, %DepoMedrol_Lot% , MedList.ini, DepoMedrol, Lot
-Inputbox, DepoMedrol_Exp , Exp, Enter DepoMedrol Expiration Date (in format mmddyyyy), ,,,,,,9999, %OLDDepoMedrol_Exp%
+Inputbox, DepoMedrol_Exp , Exp, Enter DepoMedrol Expiration Date (in format mm/dd/yyyy), ,,,,,,9999, %OLDDepoMedrol_Exp%
 	IniWrite, %DepoMedrol_Exp% , MedList.ini, DepoMedrol, Exp
 Inputbox, DepoMedrol_Man , Manufacturer, Enter DepoMedrol Manufactuer, ,,,,,,9999, %OLDDepoMedrol_Man%
 	IniWrite, %DepoMedrol_Man% , MedList.ini, DepoMedrol, Man

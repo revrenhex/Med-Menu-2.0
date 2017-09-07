@@ -10,7 +10,7 @@ IniRead, OLDDecadron_NDC , MedList.ini , Decadron, NDC ,
 
 ;InputBox, OutputVar [, Title, Prompt, HIDE, Width, Height, X, Y, Font, Timeout, Default]
 Inputbox, Decadron_Lot , Lot, Enter DECADRON Lot Number, ,,,,,,9999,%OLDDecadron_Lot%
-Inputbox, Decadron_Exp , Exp, Enter DECADRON Expiration Date (in format mmddyyyy), ,,,,,,9999,%OLDDecadron_Exp%
+Inputbox, Decadron_Exp , Exp, Enter DECADRON Expiration Date (in format mm/dd/yyyy), ,,,,,,9999,%OLDDecadron_Exp%
 Inputbox, Decadron_Man , Manufacturer, Enter DECADRON Manufactuer, ,,,,,,9999,%OLDDecadron_Man%
 Inputbox, Decadron_NDC , NDC Number, Enter DECADRON NDC Number , ,,,,,,9999,%OLDDecadron_NDC%
 

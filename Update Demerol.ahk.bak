@@ -10,7 +10,7 @@ IniRead, OLDDemerol_Man , MedList.ini , Demerol, Man ,
 IniRead, OLDDemerol_NDC , MedList.ini , Demerol, NDC , 
 
 Inputbox, Demerol_Lot , Lot, Enter Demerol Lot Number, ,,,,,,9999,%OLDDemerol_Lot%
-Inputbox, Demerol_Exp , Exp, Enter Demerol Expiration Date (in format mmddyyyy), ,,,,,,9999,%OLDDemerol_Exp%
+Inputbox, Demerol_Exp , Exp, Enter Demerol Expiration Date (in format mm/dd/yyyy), ,,,,,,9999,%OLDDemerol_Exp%
 Inputbox, Demerol_Man , Manufacturer, Enter Demerol Manufactuer, ,,,,,,9999,%OLDDemerol_Man%
 Inputbox, Demerol_NDC , NDC Number, Enter Demerol NDC Number , ,,,,,,9999,%OLDDemerol_NDC%
 IniWrite, %Demerol_Lot% , MedList.ini, Demerol, Lot

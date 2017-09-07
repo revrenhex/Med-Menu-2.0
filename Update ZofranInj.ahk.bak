@@ -10,7 +10,7 @@ IniRead, OLDZofranInj_Man , MedList.ini , ZofranInj, Man ,
 IniRead, OLDZofranInj_NDC , MedList.ini , ZofranInj, NDC , 
 
 Inputbox, ZofranInj_Lot , Lot, Enter ZofranInj Lot Number, ,,,,,,9999,%OLDZofranInj_Lot%
-Inputbox, ZofranInj_Exp , Exp, Enter ZofranInj Expiration Date (in format mmddyyyy), ,,,,,,9999,%OLDZofranInj_Exp%
+Inputbox, ZofranInj_Exp , Exp, Enter ZofranInj Expiration Date (in format mm/dd/yyyy), ,,,,,,9999,%OLDZofranInj_Exp%
 Inputbox, ZofranInj_Man , Manufacturer, Enter ZofranInj Manufactuer, ,,,,,,9999,%OLDZofranInj_Man%
 Inputbox, ZofranInj_NDC , NDC Number, Enter ZofranInj NDC Number , ,,,,,,9999,%OLDZofranInj_NDC%
 IniWrite, %ZofranInj_Lot% , MedList.ini, ZofranInj, Lot
